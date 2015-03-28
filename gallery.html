@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Technology</title>
+	<link rel="icon" type="image/x/icon" href="images/favicon.png">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="css/nivo-slider.css" type="text/css" media="screen" />
+	<link rel="stylesheet" href="css/nivstyle.css" type="text/css" media="screen" />
+	<link rel="stylesheet" type="text/css" media="screen" href="http://cdnjs.cloudflare.com/ajax/libs/fancybox/1.3.4/jquery.fancybox-1.3.4.css" />
+	<script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+    <script type="text/javascript" src="scripts/jquery-1.4.3.min.js"></script>
+	<script type="text/javascript" src="scripts/jquery.nivo.slider.pack.js"></script>	
+	<script type="text/javascript">
+	$(window).load(function() {
+	$('#slider').nivoSlider();
+	});
+	</script>
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/fancybox/1.3.4/jquery.fancybox-1.3.4.pack.min.js"></script>
+<script type="text/javascript">
+    $(function($){
+        var addToAll = false;
+        var gallery = true;
+        var titlePosition = 'inside';
+        $(addToAll ? 'img' : 'img.fancybox').each(function(){
+            var $this = $(this);
+            var title = $this.attr('title');
+            var src = $this.attr('data-big') || $this.attr('src');
+            var a = $('<a href="#" class="fancybox"></a>').attr('href', src).attr('title', title);
+            $this.wrap(a);
+        });
+        if (gallery)
+            $('a.fancybox').attr('rel', 'fancyboxgallery');
+        $('a.fancybox').fancybox({
+            titlePosition: titlePosition
+        });
+    });
+    $.noConflict();
+</script>
+</head>
+<body>
+
+
+		<div id="header">
+		<div id="logo">
+					<a href="index.html"><img src="images/final.png"></a>
+			</div>
+			<div id="nav">
+				<ul id="menu">
+					<li><a href="index.html"> Home</a></li>
+					<li><a href="#">Gallery</a></li>
+					<li><a href="articles.html">Articles</a>
+						<ul class="sub">
+							<li><a href="communication.html">Communication</a></li>
+							<li><a href="construction.html">Construction</a></li>
+							<li><a href="information.html">Information</a></li>
+							<li><a href="medical.html">Medical</a></li>
+							<li><a href="military.html">Military</a></li>
+						</ul>
+						
+					</li>
+					<li><a href="about.html">About</a></li>
+					<li><a href="contact us.html">Contact Us</a>
+				</ul>
+			</div>
+			
+		</div>
+			<div id="featured">
+		<h2>Gallery</h2>
+		
+	</div>
+		<div class="gallery">
+		<h1>Construction Technology</h1><br>
+	<img src="images/gallery/con1.jpg" class="fancybox" id= "paul" title="<justify><p> <b>Backhoe</b> - is a piece of excavating equipment or digger consisting of a digging bucket on the end of a two-part articulated arm. They are typically mounted on the back of a tractor or front loader. </p> </justify> ">
+	<img src="images/gallery/con2.jpg" class="fancybox" id= "paul" title="<justify><p> <b>Burj Khalifa</b> - known as Burj Dubai before its inauguration, is a skyscraper in Dubai, United Arab Emirates. It is the tallest man-made structure in the world, standing at 829.8 m. </p> </justify> ">
+	<img src="images/gallery/con3.jpg" class="fancybox" id= "paul" title="<justify><p> <b>Crane</b> - is a type of machine, generally equipped with a hoist, wire ropes or chains, and sheaves, that can be used both to lift and lower materials and to move them horizontally. </p></justify>">
+	<img src="images/gallery/con4.jpeg" class="fancybox" id= "paul" title="<justify><p> <b> The Golden Gate Bridge </b> - is a suspension bridge spanning the Golden Gate strait, the mile-wide, three-mile-long channel between San Francisco Bay and the Pacific Ocean.</p></justify>"> 
+	</div>
+	
+	<div  class="gallery">
+	<h1>Medical Technology</h1><br>
+	<img src="images/gallery/medical.jpg" class="fancybox" id= "paul" title="<justify><b>Magnetic resonance imaging (MRI) </b> - is a noninvasive medical test that helps physicians diagnose and treat medical conditions. MRI uses a powerful magnetic field, radio frequency pulses and a computer to produce detailed pictures of organs, soft tissues, bone and virtually all other internal body structures.</justify>">
+	<img src="images/gallery/med1.jpg" class="fancybox" id= "paul" title="<justify><p> <b>Operating Room</b> - a room in a hospital specially equipped for surgical operations.</justify>">
+	<img src="images/gallery/med2.jpg" class="fancybox" id= "paul" title="<justify><p> <b>Pacemaker</b> - is a small device that's placed in the chest or abdomen to help control abnormal heart rhythms. This device uses low-energy electrical pulses to prompt the heart to beat at a normal rate.  </p></justify>">
+	<img src="images/gallery/med3.jpg" class="fancybox" id= "paul" title="<justify><p> <b>Virtual Retinal Display (VRD)</b> - also known as a retinal scan display (RSD) or retinal projector (RP), is a display technology that draws a raster display (like a television) directly onto the retina of the eye. The user sees what appears to be a conventional display floating in space in front of them.</p></justify>">
+	</div>
+
+
+
+
+	<div class="gallery">
+	<h1>Military Technology</h1><br>
+	<img src="images/gallery/military.jpg" class="fancybox" id= "paul" title="<justify><p> <b> Corner Shot  </b> - is a new weapon system designed for urban combat which enables the user to observe and engage a target from behind a corner without exposing any body parts. > </p></justify>">
+	<img src="images/gallery/mili1.jpg" class="fancybox" id= "paul" title="<justify><p><b>Unmanned Aerial Vehicles (UAVS) </b> aka <b>Drones</b> - are aircraft either controlled by 'pilots' from the ground or increasingly, autonomously following a pre-programmed mission.  While there are dozens of different types of drones, they basically fall into two categories: those that are used for reconnaissance and surveillance purposes and those that are armed with missiles and bombs.</p></justify>">
+	<img src="images/gallery/mili2.jpg" class="fancybox" id= "paul" title="<justify><p><b>Exosuit</b> - is a mobile machine consisting primarily of an outer framework  worn by a person, and powered by a system of motors or hydraulics that delivers at least part of the energy for limb movement. </p></justify>">
+	<img src="images/gallery/mili3.jpg" class="fancybox" id= "paul" title="<justify><p><b>Lockheed Martin F-35 Lightning II </b> - is a family of single-seat, single-engine, all weather stealth multirole fighters undergoing testing and final development. This fifth generation combat aircraft is designed to perform ground attack, aerial reconnaissance, and air defense missions.</p></justify>">
+	</div>
+
+
+
+	<div class="gallery">
+	<h1>Information Technology & Communication Technology</h1><br>
+	<img src="images/gallery/comm1.jpg" class="fancybox" id= "paul" title="<b>Google Glass</b> - is a type of wearable technology with an optical head-mounted display (OHMD). It was developed by Google with the mission of producing a mass-market ubiquitous computer. Google Glass displays information in a smartphone-like hands-free format.">
+	<img src="images/gallery/it3.jpg" class="fancybox" id= "paul" title="<b>Tablet Computer</b> - is a mobile computer with a touchscreen display, circuitry and battery in a single unit. Tablets come equipped with sensors, including cameras, a microphone and an accelerometer, and the touchscreen display uses finger or stylus gestures substituting for the use of computer mouse and keyboard. ">
+	<img src="images/gallery/it1.jpg" class="fancybox" id= "paul" title="Smartphone</b>(smart phone) - is a mobile phone with an advanced operating system. Smartphones typically include the features of a phone with those of other popular mobile devices, such as personal digital assistant, media player and GPS navigation unit.">
+	<img src="images/gallery/it5.jpg" class="fancybox" id= "paul" title="<b>Smartwatch</b> (smart watch) - is a computerized wristwatch with functionality that is enhanced beyond timekeeping. While early models can perform basic tasks, such as calculations, translations, and game-playing, modern smartwatches are effectively wearable computers.">
+	</div>
+	
+	
+
+	<div id="footer">
+		<br><br><br>
+		<div class='footercenter'>
+			<div class='footerholder1'>
+			<h2>About TechNews</h2>
+			<br>
+			<p>TechNews is your online source of the latest news in technology. </p>
+			<br>
+			<p>From communication to military technology articles.</p>
+			<br><br>
+			<br><br>
+		<div class='footerholder2'>
+			<h2>Contact Us</h2>
+			<br>
+			<p>Got any questions or suggestions? Contact us at:</p>
+			<ul>
+				<li>&nbsp&nbsp 386-99-20</li>
+				<li>&nbsp&nbsp Manila, Philippines</li>
+				<li>&nbsp&nbsp Technews@gmail.com</li>
+			</ul>
+			<br><br>
+			<br><br>
+			
+		</div>
+
+			<div class='footerholder3'>
+				<h2>Social Media</h2><br>
+				<ul>
+					<li><img src='images/fb1.png' style='margin-bottom: -10px;'/> Facebook</li>
+					<li><img src='images/tw.png' style='margin-bottom: -10px;'/>  Twitter</li>
+					<li><img src='images/g+.png' style='margin-bottom: -10px;'/>  Gmail</li>
+					<li><img src='images/rss.png' style='margin-bottom: -10px;'/>  RSS</li>
+				</ul>	            
+			</div>
+		</div>		
+	</div>
+<hr style='border-bottom: 1px solid #316c7c; height: 3px;  border-left: 0; border-right: 0; width: 980px; margin-top: 10px;'>
+	
+	<span>&copy; Copyright 2015 - All Rights Reserved | <font style='color: #316c7c'><b>TechNews</b></font></span>
+		
+</div>
+</body>
+</html>
+
